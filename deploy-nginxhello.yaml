@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nginx-hello
+  labels:  
+    tier: frontend
+    app: nginx-hello
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        tier: frontend
+        app: nginx-hello
+    spec:
+      containers:
+      - name: nginx-hello
+        image: nginxdemos/hello
+        ports:
+        - containerPort: 80
+
