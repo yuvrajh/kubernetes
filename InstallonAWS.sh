@@ -1,0 +1,14 @@
+export KUBE_AWS_ZONE=us-west-2a
+export KUBE_VERSION=$(curl -fL "https://dl.k8s.io/release/stable.txt")
+export NUM_NODES=2
+export MASTER_SIZE=t2.micro
+export NODE_SIZE=t2.micro
+export AWS_S3_REGION=us-west-2
+export KUBE_AWS_INSTANCE_PREFIX=k8s-1.5.1
+export KUBE_OS_DISTRIBUTION=jessie
+export MASTER_DISK_SIZE=5
+export MASTER_ROOT_DISK_SIZE=8
+export NODE_ROOT_DISK_SIZE=8
+export AWS_SSH_KEY=$PWD/kube1.5.1.key
+export KUBERNETES_PROVIDER=aws; wget -q -O - https://get.k8s.io | bash
+export PATH=$PATH:$(dirname ${tarfile_Downloaded})/bin
