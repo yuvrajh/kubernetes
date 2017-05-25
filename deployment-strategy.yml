@@ -15,6 +15,6 @@
         - name: nginx
           image: nginx:1.7.9
           
-          
+http://www.blog.distelli.com/single-post/2016/12/12/Kubernetes-Deployment-Specification-Deep-Dive-%E2%80%94-Advanced-Deployment-Options-Scaling-Deployment-Strategy-Readiness-and-Revision-History          
           
           where spec.strategy.rollingUpdate.maxUnavailable is the maximum number of pods that can be unavailable during the update, and spec.strategy.rollingUpdate.maxSurge is the maximum number of pods that can be scheduled above the desired number of pods. 
